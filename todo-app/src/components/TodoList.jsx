@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
 
-function TodoList({handleTodoClick, todos}) {
+function TodoList({handleClick, todos}) {
 
     return (
         <ul>
@@ -9,7 +9,7 @@ function TodoList({handleTodoClick, todos}) {
                     return <TodoItem 
                         key={todo.id}
                         todo={todo}
-                        handleTodoClick={handleTodoClick}
+                        handleTodoClick={handleClick}
                     />
                 })
             }
